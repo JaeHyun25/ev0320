@@ -32,20 +32,19 @@ python main.py
 ```
 /home/ijh/auto_llm/LLMs/
 ├── src/
-│   ├── detector/      # 감지 관련 코드
+│   ├── detector/
 │   │   ├── ev_detector.py
 │   │   └── ev_classifier.py
-│   └── utils/         # 유틸리티 함수
-│       ├── image_processing.py
-│       └── logging_config.py
-├── config/            # 설정 파일
+│   ├── utils/
+│   │   ├── image_processing.py
+│   │   └── logging_config.py
+│   └── models/        # 여기에 모델 파일이 있음
+│       ├── xgb_model.pkl
+│       └── lgbm_model.pkl
+├── config/
 │   └── config.yaml
-├── models/            # 모델 파일
-│   ├── xgb_model.pkl
-│   └── lgbm_model.pkl
-├── results/           # 결과 파일
-├── logs/              # 로그 파일
-└── tests/             # 테스트 코드
+├── results/
+└── logs/
 ```
 
 ## 주요 기능
